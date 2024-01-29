@@ -1,0 +1,4 @@
+rootProject.name = 'PactContractTestsDemo'
+
+include 'consumer'
+include 'provider'
