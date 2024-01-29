@@ -47,3 +47,14 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+pact {
+    publish {
+        pactDirectory = 'consumer/build/pacts'
+        pactBrokerUrl = 'http://localhost:8000/'
+        pactBrokerUsername = 'pact'
+        pactBrokerPassword = 'pact'
+        tags = ['branch', 'test']
+        consumerVersion = UUID.randomUUID().toString()
+    }
+}
+

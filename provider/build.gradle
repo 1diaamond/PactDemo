@@ -33,5 +33,6 @@ dependencies {
 }
 
 tasks.named('test') {
+    systemProperty 'pact.verifier.publishResults', 'true'
     useJUnitPlatform()
 }
